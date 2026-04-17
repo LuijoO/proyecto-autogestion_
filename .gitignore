@@ -1,0 +1,6 @@
+# Archivos del sistema macOS
+.DS_Store
+
+# (Opcional) Ignorar las subidas de medios de WordPress para no saturar el repositorio
+# Si quieres guardar las imágenes en GitHub, simplemente borra la siguiente línea:
+wp-content/uploads/
