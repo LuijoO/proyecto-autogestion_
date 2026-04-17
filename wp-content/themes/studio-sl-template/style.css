@@ -1,0 +1,75 @@
+/* ==========================================================================
+   Hero Banner Component
+   ========================================================================== */
+
+.hero-banner {
+    position: relative;
+    /* Configuración de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Altura del banner: ocupa el 80% del alto de la pantalla */
+    height: 80vh; 
+    min-height: 400px;
+    /* Flexbox para centrar el contenido perfectamente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    color: #ffffff; /* Texto blanco */
+    z-index: 2; /* Asegura que el texto esté por encima del fondo */
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Sombra para resaltar más */
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #0073aa; /* Color azul llamativo */
+    color: #ffffff;
+    padding: 16px 36px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px; /* Bordes redondeados */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.hero-button:hover {
+    background-color: #005177; /* Azul más oscuro al pasar el mouse */
+    color: #ffffff;
+    transform: translateY(-2px); /* Pequeño efecto de elevación */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* --- Adaptación para pantallas de teléfonos (Móviles) --- */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .hero-button {
+        padding: 12px 28px;
+        font-size: 1rem;
+    }
+}
